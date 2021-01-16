@@ -2,15 +2,14 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'StokeSites', // e.g: 'Name | Developer'
+  lang: 'en', // e.g: en, es, fr, jp
+  description: 'Get more customers with StokeSites', // e.g: Welcome to my website
 };
 
 // HERO DATA
 export const heroData = {
   title: 'We Will Get You More Customers and Improve Your Online Presence',
-  name: '',
   subtitle: 'Modern websites for the takeaways of Stoke',
   cta: 'Get a Quote',
 };
