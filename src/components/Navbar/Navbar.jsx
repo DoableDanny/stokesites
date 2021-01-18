@@ -22,7 +22,7 @@ const Navbar = () => {
         <h1>{title || 'siteName'}</h1>
       </a>
       <nav>
-        <button className="hamburger" type="button" onClick={toggleHamburger}>
+        <button className="hamburger-btn" type="button" onClick={toggleHamburger}>
           <div className="line" />
           <div className="line" />
           <div className="line" />
