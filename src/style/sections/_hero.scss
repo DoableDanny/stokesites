@@ -54,9 +54,14 @@
     @include respond(tab-port) {
       font-size: 3.6rem;
       text-align: center;
+      margin-bottom: 2rem;
+
+      &:first-child {
+        margin-top: 7rem;
+      }
     }
     @include respond(phone) {
-      font-size: 3.5rem;
+      font-size: 3.2rem;
       line-height: 1.5;
     }
     @include respond(phone-xs) {
@@ -68,6 +73,17 @@
     font-size: 3rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
+
+    @include respond(tab-port) {
+      font-size: 2.8rem;
+    }
+    @include respond(phone) {
+      font-size: 2.6rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 2.4rem;
+    }
   }
 
   .hero-cta {
