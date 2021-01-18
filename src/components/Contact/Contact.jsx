@@ -9,17 +9,21 @@ const Contact = () => {
       <Container>
         <Title title="Contact" />
         <Fade bottom duration={1000} delay={800} distance="30px">
-          <form className="contact-form">
+          <form
+            className="contact-form"
+            action="https://formsubmit.co/47b18bd77788e64e48bcc3e00ef9332a"
+            method="POST"
+          >
             <div className="form-group">
               <label htmlFor="email">
-                Email
-                <input id="email" name="email" type="email" className="form-control" />
+                Your Email
+                <input id="email" name="email" type="email" className="form-control" required />
               </label>
             </div>
             <div className="form-group">
               <label htmlFor="message">
                 Ask us anything...
-                <textarea id="message" name="message" className="form-control" />
+                <textarea id="message" name="message" className="form-control" required />
               </label>
             </div>
             <button type="submit" className="submit-btn">

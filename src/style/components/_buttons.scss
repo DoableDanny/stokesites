@@ -36,6 +36,8 @@
     // background-image: none;
     border: 2px solid $light-green-color;
     -webkit-text-fill-color: $light-green-color;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: $black-color;
   }
 
   &::after {
@@ -51,12 +53,23 @@
     text-decoration: none;
     // Responsive Button hover hero style
     @include respond(phone) {
-      -webkit-text-fill-color: $light-green-color;
+      // -webkit-text-fill-color: $light-green-color;
+      transform: scale(0.95);
     }
 
     &::after {
       width: 100%;
     }
+  }
+}
+
+.cta-btn--projects {
+  @extend .cta-btn--hero;
+  background-clip: unset;
+  -webkit-text-fill-color: $dark-blue-text;
+
+  &:hover {
+    transform: scale(0.95);
   }
 }
 

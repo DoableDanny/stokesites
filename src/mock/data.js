@@ -21,11 +21,11 @@ export const navbarData = {
       name: 'Our Work',
       to: '#projects',
     },
-    {
-      id: nanoid(),
-      name: 'Blog',
-      to: '#blog',
-    },
+    // {
+    //   id: nanoid(),
+    //   name: 'Blog',
+    //   to: '#blog',
+    // },
     {
       id: nanoid(),
       name: 'Pricing',

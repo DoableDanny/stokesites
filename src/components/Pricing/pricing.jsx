@@ -11,16 +11,16 @@ function Pricing() {
 
     switch (bannerIndex) {
       case 0:
-        bannerColor = 'banner banner__gray';
+        bannerColor = 'banner banner--gray';
         break;
       case 1:
-        bannerColor = 'banner banner__green';
+        bannerColor = 'banner banner--green';
         break;
       case 2:
-        bannerColor = 'banner banner__gold';
+        bannerColor = 'banner banner--gold';
         break;
       default:
-        bannerColor = 'banner banner__gray';
+        bannerColor = 'banner banner--gray';
     }
 
     return bannerColor;
