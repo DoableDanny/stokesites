@@ -31,7 +31,7 @@ const Navbar = () => {
           {links
             ? links.map((link) => (
                 <li key={link.id} className={`${hamOpen ? 'fade' : ''}`}>
-                  <a href="# " onClick={handleLinkClick}>
+                  <a href={link.to} onClick={handleLinkClick}>
                     {link.name}
                   </a>
                 </li>

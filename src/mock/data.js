@@ -14,22 +14,27 @@ export const navbarData = {
     {
       id: nanoid(),
       name: 'About',
+      to: '#about',
     },
     {
       id: nanoid(),
       name: 'Our Work',
+      to: '#projects',
     },
     {
       id: nanoid(),
       name: 'Blog',
+      to: '#blog',
     },
     {
       id: nanoid(),
       name: 'Pricing',
+      to: '#pricing',
     },
     {
       id: nanoid(),
       name: 'Contact',
+      to: '#contact',
     },
   ],
 };
