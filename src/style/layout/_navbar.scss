@@ -24,6 +24,7 @@ nav {
     display: flex;
     list-style-type: none;
     margin: 0;
+    padding: 0;
   }
 
   li {
@@ -73,7 +74,7 @@ nav {
     align-items: center;
     clip-path: circle(75px at 95% -15%);
     transition: all 1s ease-out;
-    background-color: $black-color;
+    background-color: $primary-color;
 
     li {
       margin: 20px;

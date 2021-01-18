@@ -24,7 +24,7 @@
 /* Hero Style */
 .cta-btn--hero {
   background-image: linear-gradient(135deg, $dark-green-color 0%, $light-green-color 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   border-width: 2px;
   border-style: solid;
@@ -63,10 +63,13 @@
   }
 }
 
+// Our work/projects btns
 .cta-btn--projects {
   @extend .cta-btn--hero;
   background-clip: unset;
-  -webkit-text-fill-color: $dark-blue-text;
+  background-image: linear-gradient(135deg, $light-green-color 0%, $dark-green-color 100%);
+  // background-color: $dark-green-color;
+  -webkit-text-fill-color: $black-color;
 
   &:hover {
     transform: scale(0.95);
