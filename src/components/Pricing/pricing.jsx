@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { Card } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 
@@ -7,24 +6,46 @@ function Pricing() {
   const { pricing } = useContext(PortfolioContext);
   const { cards } = pricing;
 
+  const addBannerColor = (bannerIndex) => {
+    let bannerColor;
+
+    switch (bannerIndex) {
+      case 0:
+        bannerColor = 'banner banner__gray';
+        break;
+      case 1:
+        bannerColor = 'banner banner__green';
+        break;
+      case 2:
+        bannerColor = 'banner banner__gold';
+        break;
+      default:
+        bannerColor = 'banner banner__gray';
+    }
+
+    return bannerColor;
+  };
+
   return (
     <section id="pricing">
       <Title title="Pricing" />
       <div className="cards-wrapper">
         {cards
-          ? cards.map((card) => (
-              <Card key={card.id} class="card">
-                <div className="pricing-banner">
+          ? cards.map((card, index) => (
+              <div key={card.id} className="card">
+                <div className={addBannerColor(index)}>
                   <h3>One Page Site</h3>
                 </div>
-                <ul>
-                  <li>1 Page Site</li>
-                  <li>Food menu</li>
-                  <li>Personal info and images</li>
-                </ul>
-                <hr />
-                <p>£150</p>
-              </Card>
+                <div className="pricing-points">
+                  <p>1 Page Site</p>
+                  <p>Food menu</p>
+                  <p>Personal info and images</p>
+                </div>
+                <div className="price">
+                  <hr />
+                  <p>£150</p>
+                </div>
+              </div>
             ))
           : ''}
       </div>
