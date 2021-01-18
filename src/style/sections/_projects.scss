@@ -1,5 +1,5 @@
 #projects {
-  background-color: $white-color;
+  background-color: $third-color;
   color: $dark-blue-text;
   margin-top: -15rem;
   padding-top: 15rem;
@@ -26,6 +26,7 @@
 
     &__text {
       text-align: left;
+      line-height: 3rem;
 
       @include respond(phone) {
         margin-bottom: 2.5rem !important;
@@ -50,11 +51,11 @@
     }
 
     &__image {
-      width: 90%;
+      width: 80%;
       margin: 0 auto;
 
       @include respond(tab-land) {
-        width: 100%;
+        width: 80%;
         margin: 0;
       }
 

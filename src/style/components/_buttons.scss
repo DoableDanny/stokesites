@@ -23,23 +23,23 @@
 
 /* Hero Style */
 .cta-btn--hero {
-  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  background-image: linear-gradient(135deg, $dark-green-color 0%, $light-green-color 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-width: 2px;
   border-style: solid;
-  border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  border-image: linear-gradient(135deg, $dark-green-color 0%, $light-green-color 100%);
   border-image-slice: 1;
   cursor: pointer;
   // Responsive Button hero style
   @include respond(phone) {
-    background-image: none;
-    border: 2px solid $secondary-color;
-    -webkit-text-fill-color: $secondary-color;
+    // background-image: none;
+    border: 2px solid $light-green-color;
+    -webkit-text-fill-color: $light-green-color;
   }
 
   &::after {
-    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    background-image: linear-gradient(135deg, $dark-green-color 0%, $light-green-color 100%);
     // Responsive Button hero style
     @include respond(phone) {
       background-image: none;
@@ -47,11 +47,11 @@
   }
 
   &:hover {
-    -webkit-text-fill-color: $white-color;
+    -webkit-text-fill-color: $black-color;
     text-decoration: none;
     // Responsive Button hover hero style
     @include respond(phone) {
-      -webkit-text-fill-color: $secondary-color;
+      -webkit-text-fill-color: $light-green-color;
     }
 
     &::after {
@@ -70,7 +70,7 @@
   }
 
   &:hover {
-    color: $secondary-color;
+    color: $black-color;
     text-decoration: none;
 
     &::after {
@@ -82,4 +82,18 @@
 /* Arrow Button */
 .up i {
   color: #272727;
+}
+
+// Submit btn
+.submit-btn {
+  padding: 10px;
+  margin-top: 16px;
+  background-color: #7df011;
+  font-size: 19px;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    transform: scale(0.98);
+  }
 }

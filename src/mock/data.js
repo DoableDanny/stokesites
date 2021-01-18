@@ -7,6 +7,33 @@ export const headData = {
   description: 'Get more customers with StokeSites', // e.g: Welcome to my website
 };
 
+// NAV DATA
+export const navbarData = {
+  title: 'StokeSites',
+  links: [
+    {
+      id: nanoid(),
+      name: 'About',
+    },
+    {
+      id: nanoid(),
+      name: 'Our Work',
+    },
+    {
+      id: nanoid(),
+      name: 'Blog',
+    },
+    {
+      id: nanoid(),
+      name: 'Pricing',
+    },
+    {
+      id: nanoid(),
+      name: 'Contact',
+    },
+  ],
+};
+
 // HERO DATA
 export const heroData = {
   title: 'We Will Get You More Customers and Improve Your Online Presence',
@@ -19,7 +46,7 @@ export const aboutData = {
   img: 'profile.jpg',
   paragraphOne: `Hi I'm Dan, the founder of StokeSites.`,
   paragraphTwo: `Growing up, I lived all over Stoke including Longton,
-  Bentilee, Meir, and now Forsbrook so I no the city's 
+  Bentilee, Meir, and now Forsbrook so I know the city's 
   takeaways well.`,
   paragraphThree: `As a web developer, I thought it would be fun to start
   a business where I could help to increase the traffic to
@@ -58,10 +85,40 @@ export const projectsData = [
   },
 ];
 
+// PRICING DATA
+export const pricingData = {
+  cards: [
+    {
+      id: nanoid(),
+      title: 'Single Page Wesbite',
+      bullet1: 'Food menu',
+      bullet2: 'Custom images and text',
+      bullet3: 'Custom design',
+      price: 150,
+    },
+    {
+      id: nanoid(),
+      title: 'Single Page Wesbite',
+      bullet1: 'Food menu',
+      bullet2: 'Custom images and text',
+      bullet3: 'Custom design',
+      price: 150,
+    },
+    {
+      id: nanoid(),
+      title: 'Single Page Wesbite',
+      bullet1: 'Food menu',
+      bullet2: 'Custom images and text',
+      bullet3: 'Custom design',
+      price: 150,
+    },
+  ],
+};
+
 // CONTACT DATA
 export const contactData = {
   cta: 'Ask us anything!',
-  btn: '',
+  btn: 'Submit',
   email: 'doabledanny@gmail.com',
 };
 
