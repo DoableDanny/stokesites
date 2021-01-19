@@ -103,19 +103,19 @@ export const pricingData = {
     },
     {
       id: nanoid(),
-      title: 'Single Page Wesbite',
+      title: '3 Page Website',
       bullet1: 'Food menu',
       bullet2: 'Custom images and text',
       bullet3: 'Custom design',
-      price: 150,
+      price: 350,
     },
     {
       id: nanoid(),
-      title: 'Single Page Wesbite',
+      title: 'Online Ordering Website',
       bullet1: 'Food menu',
       bullet2: 'Custom images and text',
       bullet3: 'Custom design',
-      price: 150,
+      price: 500,
     },
   ],
 };

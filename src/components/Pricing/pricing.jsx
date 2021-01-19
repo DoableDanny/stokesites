@@ -34,16 +34,16 @@ function Pricing() {
           ? cards.map((card, index) => (
               <div key={card.id} className="card">
                 <div className={addBannerColor(index)}>
-                  <h3>One Page Site</h3>
+                  <h3>{card.title}</h3>
                 </div>
                 <div className="pricing-points">
-                  <p>1 Page Site</p>
-                  <p>Food menu</p>
-                  <p>Personal info and images</p>
+                  <p>{card.bullet1}</p>
+                  <p>{card.bullet2}</p>
+                  <p>{card.bullet3}</p>
                 </div>
                 <div className="price">
                   <hr />
-                  <p>£150</p>
+                  <p>£{card.price}</p>
                 </div>
               </div>
             ))
