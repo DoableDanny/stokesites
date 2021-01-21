@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import Fade from 'react-reveal/Fade';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 
@@ -29,26 +30,28 @@ function Pricing() {
   return (
     <section id="pricing">
       <Title title="Pricing" />
-      <div className="cards-wrapper">
-        {cards
-          ? cards.map((card, index) => (
-              <div key={card.id} className="card">
-                <div className={addBannerColor(index)}>
-                  <h3>{card.title}</h3>
+      <Fade bottom duration={1000} delay={800} distance="30px">
+        <div className="cards-wrapper">
+          {cards
+            ? cards.map((card, index) => (
+                <div key={card.id} className="card">
+                  <div className={addBannerColor(index)}>
+                    <h3>{card.title}</h3>
+                  </div>
+                  <div className="pricing-points">
+                    <p>{card.bullet1}</p>
+                    <p>{card.bullet2}</p>
+                    <p>{card.bullet3}</p>
+                  </div>
+                  <div className="price">
+                    <hr />
+                    <p>£{card.price}</p>
+                  </div>
                 </div>
-                <div className="pricing-points">
-                  <p>{card.bullet1}</p>
-                  <p>{card.bullet2}</p>
-                  <p>{card.bullet3}</p>
-                </div>
-                <div className="price">
-                  <hr />
-                  <p>£{card.price}</p>
-                </div>
-              </div>
-            ))
-          : ''}
-      </div>
+              ))
+            : ''}
+        </div>
+      </Fade>
     </section>
   );
 }
