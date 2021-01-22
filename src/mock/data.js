@@ -9,7 +9,7 @@ export const headData = {
 
 // NAV DATA
 export const navbarData = {
-  title: 'StokeSites',
+  title: 'StokeySites',
   links: [
     {
       id: nanoid(),
@@ -57,7 +57,7 @@ export const aboutData = {
   a business where I could help to increase the traffic to
   takeaway's by improving their online presence, hence
   STOKESITES!`,
-  resume: 'https://twitter.com/DoableDanny', // if no resume, the button will not show up
+  resume: '', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
