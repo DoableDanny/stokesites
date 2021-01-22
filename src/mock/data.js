@@ -132,18 +132,13 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: 'https://twitter.com/DoableDanny',
+      name: 'facebook',
+      url: 'https://www.facebook.com/StokeySites-103824255046116',
     },
     {
       id: nanoid(),
-      name: 'codepen',
-      url: 'https://codepen.io/DoableDanny',
-    },
-    {
-      id: nanoid(),
-      name: 'github',
-      url: 'https://github.com/DoableDanny',
+      name: 'google',
+      url: 'https://g.page/StokeySites?gm',
     },
   ],
 };
